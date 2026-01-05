@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo selectors</title>
+  <style>
+    p::first-letter{
+      font-size: 40px;
+      color:deeppink;
+    }
+    p::first-line{
+      font-variant: small-caps;
+      font-size:20px;
+    }
+    h3::before{
+      content: url(smile.png);
+    }
+    h3::after{
+      content:url(smile.png);
+      content-image: small;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo element selector</h1>
+  <h3>Learning is for everyone(LIFE) .</h3>
+  <p>We just understand this then our life becomes very beautiful and Also "It is not the strength of the body that counts, but the strength of the spirit." — ...</P>
+</body>
+
+</html>

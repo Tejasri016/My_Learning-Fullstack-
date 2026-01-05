@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Targetting div tag elements</title>
+  <style>
+      
+    p.container{
+      color:green;
+    }
+    div.container {
+ background-color: skyblue;
+ color: black;
+    }
+    div > p{
+      color:blue ;
+    }
+    div +p{
+      background-color: black;
+      color: white;
+    }
+    div~p{
+      background-color:pink;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Combinator selector</h1>
+<p class="container">
+  class "container"
+     <div class="container">
+       hello 
+     </div>
+     <div>
+       <p>(>) selector</p>
+       <p>
+       child selector 
+       </p>
+     </div>
+  </p>
+  <div>
+    <p>try this</p>
+    <p>selector example</p>
+  </div>
+  <p>(+) selector</p>
+  <p>(~) selector</p>
+</body>
+
+</html>
